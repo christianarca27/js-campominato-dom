@@ -18,7 +18,19 @@ header {
     align-items: center;
 }
 
-header #btn-play {
+header #header-right {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+
+header #header-right #level {
+    border-radius: 10px;
+
+    font-size: 1.5rem;
+}
+
+header #header-right #btn-new-game {
     padding: 1em 2em;
     border-radius: 10px;
 }
@@ -38,7 +50,7 @@ main #container-centered {
     align-items: center;
 }
 
-main #container-centered #play-table {
+main #container-centered #game-table {
     width: 80%;
     aspect-ratio: 1;
 
@@ -46,6 +58,6 @@ main #container-centered #play-table {
     flex-flow: row wrap;
 }
 
-main #container-centered #play-table .square {
+main #container-centered #game-table .square {
     border: 1px solid black;
 }

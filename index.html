@@ -10,20 +10,24 @@
 </head>
 <body>
     <header>
-        <h1>Campo Minato</h1>
+        <div id="header-left">
+            <h1>Campo Minato</h1>
+        </div>
 
-        <select name="level" id="level">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
-
-        <button id="btn-play">Play</button>
+        <div id="header-right">
+            <select name="level" id="level">
+                <option value="1">Easy</option>
+                <option value="2">Hard</option>
+                <option value="3">Crazy</option>
+            </select>
+    
+            <button id="btn-new-game">New Game</button>
+        </div>
     </header>
 
     <main>
         <div id="container-centered">
-            <div id="play-table"></div>
+            <div id="game-table"></div>
         </div>
     </main>
 
