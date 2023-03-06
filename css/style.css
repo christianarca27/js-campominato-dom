@@ -48,6 +48,8 @@ main #container-centered {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
 
 main #container-centered #game-table {
@@ -56,6 +58,26 @@ main #container-centered #game-table {
 
     display: flex;
     flex-flow: row wrap;
+
+    /* filter: blur(5px); */
+}
+
+main #container-centered #score {
+    background-color: white;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    display: none;
+
+    position: absolute;
+
+    font-size: 2rem;
+    text-align: center;
+}
+
+main #container-centered #score strong {
+    font-size: 3rem;
 }
 
 main #container-centered #game-table .square {
@@ -67,4 +89,12 @@ main #container-centered #game-table .square {
     align-items: center;
 
     font-size: 1.5rem;
+}
+
+main #container-centered #game-table .square.active {
+    background-color: lightblue;
+}
+
+main #container-centered #game-table .square.bomb.active {
+    background-color: red;
 }
