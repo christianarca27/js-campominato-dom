@@ -96,6 +96,10 @@ main #container-centered #game-table .square:not(.active):hover {
     cursor: pointer;
 }
 
+main #container-centered #game-table .square.active:hover {
+    pointer-events: none;
+}
+
 main #container-centered #game-table .square.active {
     background-color: lightblue;
 }
